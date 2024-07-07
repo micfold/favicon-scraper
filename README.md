@@ -1,0 +1,1 @@
+# favicon-scraper-tool
