@@ -3,6 +3,14 @@ import aiohttp
 from typing import List, Dict
 
 CHUNK_SIZE = 10
+TEST_COMPANIES = [
+        {"name": "Apple", "url": "https://www.apple.com"},
+        {"name": "Microsoft", "url": "https://www.microsoft.com"},
+        {"name": "Google", "url": "https://abc.xyz/"},
+        {"name": "American Express", "url": "https://americanexpress.com"},
+        {"name": "US Steel", "url": "https://www.ussteel.com"},
+        {"name": "Raiffeisen Bank Internatiol", "url": "https://www.rbinternational.com"},
+    ]
 
 
 async def process_companies(companies: List[Dict[str, str]]):
@@ -30,13 +38,7 @@ async def process_companies(companies: List[Dict[str, str]]):
 
 
 async def main():
-    companies = [
-        {"name": "Apple", "url": "https://www.apple.com"},
-        {"name": "Microsoft", "url": "https://www.microsoft.com"},
-        {"name": "Google", "url": "https://abc.xyz/"},
-        {"name": "American Express", "url": "https://americanexpress.com"},
-        {"name": "US Steel", "url": "https://www.ussteel.com"},
-    ]
+    companies = TEST_COMPANIES
 
     processed_companies = await process_companies(companies)
 
