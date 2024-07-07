@@ -1,19 +1,23 @@
 import re
-from pydantic import Optional, BaseModel
 from bs4 import BeautifulSoup
-import HttpUrl
+from typing import Optional
+from pydantic import BaseModel, HttpUrl
+
 
 class Company(BaseModel):
     name: str
     url: HttpUrl
 
+
 class CompanyList(BaseModel):
     companies: list[Company]
+
 
 class CompanyWithIcon(BaseModel):
     name: str
     url: HttpUrl
     icon_url: str
+
 
 class IconRequest(BaseModel):
     url: HttpUrl

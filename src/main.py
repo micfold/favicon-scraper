@@ -1,16 +1,14 @@
-from fastapi import FastAPI
-import httpx
-from bs4 import BeautifulSoup
+from typing import Optional, List
 from urllib.parse import urljoin
-import re
-from typing import Optional
+
+import httpx
 import uvicorn
-from fastapi import APIRouter
-import schemas, router
+from fastapi import FastAPI
+
+
+from src.schemas import CompanyWithIcon, CompanyList
 
 app = FastAPI()
-
-router = APIRouter()
 
 icon_cache = {}
 
@@ -47,7 +45,33 @@ async def find_icon(base_url: str) -> Optional[str]:
     return None
 
 
-if __name__ == "__main__":
+@app.post("/get_icons", response_model=List[CompanyWithIcon])
+async def get_icons(company_list: CompanyList):
+    results = []
 
+    for company in company_list.companies:
+        url = str(company.url)
+
+        if url in icon_cache:
+            results.append(CompanyWithIcon(name=company.name, url=url, icon_url=icon_cache[url]))
+            continue
+
+        try:
+            icon_url = await find_icon(url)
+
+            if icon_url:
+                icon_cache[url] = icon_url
+                results.append(CompanyWithIcon(name=company.name, url=url, icon_url=icon_url))
+            else:
+                results.append(CompanyWithIcon(name=company.name, url=url, icon_url=""))
+
+        except Exception as e:
+            print(f"Unexpected error processing {company.name}: {str(e)}")
+            results.append(CompanyWithIcon(name=company.name, url=url, icon_url=""))
+
+    return results
+
+
+if __name__ == "__main__":
 
     uvicorn.run(app, host="0.0.0.0", port=8000)

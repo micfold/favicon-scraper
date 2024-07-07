@@ -4,6 +4,7 @@ from typing import List, Dict
 
 CHUNK_SIZE = 10
 
+
 async def process_companies(companies: List[Dict[str, str]]):
     async with aiohttp.ClientSession() as session:
         chunk_size = CHUNK_SIZE
@@ -26,6 +27,7 @@ async def process_companies(companies: List[Dict[str, str]]):
                 print(f"Connection error: {e}")
 
         return companies
+
 
 async def main():
     companies = [
