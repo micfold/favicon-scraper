@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6d43c294-7d6e-4c3f-b259-786752cd0e65" name="Changes" comment="changes affected by restructure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company_icon_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/company_icon_processor.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +187,8 @@
       <workItem from="1720357820239" duration="1264000" />
       <workItem from="1720367797332" duration="1744000" />
       <workItem from="1720369624415" duration="115000" />
-      <workItem from="1720379165456" duration="1018000" />
+      <workItem from="1720379165456" duration="1234000" />
+      <workItem from="1720422391967" duration="1238000" />
     </task>
     <task id="LOCAL-00001" summary="changes affected by restructure">
       <option name="closed" value="true" />
@@ -198,7 +198,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720369655633</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="changes affected by restructure">
+      <option name="closed" value="true" />
+      <created>1720391028937</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1720391028937</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,8 +246,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/IconScraperTool$company_icon_processor.coverage" NAME="company_icon_processor Coverage Results" MODIFIED="1720356797264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/favicon_scraper_tool$company_icon_processor.coverage" NAME="company_icon_processor Coverage Results" MODIFIED="1720369306487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/favicon_scraper_tool$IconScraperTool.coverage" NAME="IconScraperTool Coverage Results" MODIFIED="1720369299349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/favicon_scraper_tool$company_icon_processor.coverage" NAME="company_icon_processor Coverage Results" MODIFIED="1720390923337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/favicon_scraper_tool$IconScraperTool.coverage" NAME="IconScraperTool Coverage Results" MODIFIED="1720390861778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/IconScraperTool$IconScraperTool.coverage" NAME="IconScraperTool Coverage Results" MODIFIED="1720356791891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/IconScraperTool$main.coverage" NAME="main Coverage Results" MODIFIED="1720356655398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
